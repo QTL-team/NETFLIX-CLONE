@@ -1,13 +1,15 @@
 {
-  "public": false,
-  "rewrites": [
+  "version": 2,
+  "builds": [
     {
-      "source": "/(.*)",
-      "destination": "/Netflix/$1"
-    },
+      "src": "index.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
     {
-      "source": "/",
-      "destination": "/Netflix/index.html"
+      "src": "/(.*)",
+      "dest": "/$1"
     }
   ]
 }
