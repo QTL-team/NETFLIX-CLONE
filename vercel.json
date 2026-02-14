@@ -1,0 +1,14 @@
+{
+  "public": false,
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/Netflix/$1"
+    },
+    {
+      "source": "/",
+      "destination": "/Netflix/index.html"
+    }
+  ]
+}
+
